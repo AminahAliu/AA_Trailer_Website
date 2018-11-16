@@ -1,5 +1,25 @@
-.container {
-  width: 2000px;
-  height: 100px;
-  background-color: #F0FFF0;
+.highlight {
+  background-color:#FFE4E1;
 }
+#outline {
+  border-color: black;
+  border-left: 1px 1px 1px 1px black;
+}
+#container
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px #1e1e1e;
+    text-indent: 20px;
+  }
+
+  footer {
+    background-color: #FFE4E1;
+    line-height: 250%;
+    height: 86px;
+    text-indent: 350px;
+    margin-left: 20px;
+    width: 960px;
+  }
