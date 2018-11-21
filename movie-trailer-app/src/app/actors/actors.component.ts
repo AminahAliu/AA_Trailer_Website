@@ -11,7 +11,7 @@ import {MEG_MURRY} from './real-actors';
   styleUrls: ['./actors.component.css']
 })
 export class ActorsComponent implements OnInit {
- actors = [MRS_WHICH, PRINCE_TCHALLA, MEG_MURRY];
+ actors = [MRS_WHICH, PRINCE_TCHALLA, MEG_MURRY, MEG_MURRY, MEG_MURRY, MEG_MURRY];
   constructor() { }
 
   ngOnInit() {
