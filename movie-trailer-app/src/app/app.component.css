@@ -12,8 +12,8 @@
     margin-right: auto;
     width: 1000px;
     background-color: #FFFFFF;
-    box-shadow: 5px 5px 5px #1e1e1e;
-    text-indent: 20px;
+    box-shadow: 5px #1e1e1e;
+
   }
 
   footer {
@@ -23,4 +23,8 @@
     text-indent: 350px;
     margin-left: 20px;
     width: 960px;
+  }
+
+  nav a.active {
+    color: #039be5;
   }

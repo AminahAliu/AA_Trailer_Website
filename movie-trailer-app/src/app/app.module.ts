@@ -13,7 +13,7 @@ import { ActorsComponent } from './actors/actors.component';
   imports: [
     BrowserModule,
     AppRoutingModule
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
