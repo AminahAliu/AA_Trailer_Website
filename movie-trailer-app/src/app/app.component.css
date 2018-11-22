@@ -16,15 +16,6 @@
 
   }
 
-  footer {
-    background-color: #FFE4E1;
-    line-height: 250%;
-    height: 86px;
-    text-indent: 350px;
-    margin-left: 20px;
-    width: 960px;
-  }
-
-  nav a.active {
+nav a.active {
     color: #039be5;
   }
