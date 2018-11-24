@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Movie } from './movie';
+
+
 import { Actor } from './actor';
-import {PRINCE_TCHALLA} from './real-actors';
-import {MRS_WHICH} from './real-actors';
-import {MEG_MURRY} from './real-actors';
+import {ALL_ACTORS} from './real-actors';
+
+import { ActorService } from '../actor.service';
 
 @Component({
   selector: 'app-actors',
@@ -11,10 +12,17 @@ import {MEG_MURRY} from './real-actors';
   styleUrls: ['./actors.component.css']
 })
 export class ActorsComponent implements OnInit {
- actors = [MRS_WHICH, PRINCE_TCHALLA, MEG_MURRY];
-  constructor() { }
+
+  actors = ALL_ACTORS;
+
+  constructor(private actorService: ActorService) { }
 
   ngOnInit() {
+    this.getActors();
+  }
+
+  getActors(): void {
+    this.actors = this.actorService.getActors();
   }
 
 }
