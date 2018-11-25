@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Actor } from '../actors/actor';
 import { ActorService } from '../actor.service';
-
+import {ALL_ACTORS} from '../actors/real-actors';
 
 @Component({
   selector: 'app-actor-detail',
