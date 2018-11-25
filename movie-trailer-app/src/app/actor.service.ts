@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { Actor } from './actors/actor'
-import { ALL_ACTORS } from './real-actors';
+import { ALL_ACTORS } from './actor/real-actors';
 
 @Injectable({
   providedIn: 'root'
