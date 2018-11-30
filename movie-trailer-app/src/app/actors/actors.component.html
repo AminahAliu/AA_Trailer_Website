@@ -1,6 +1,6 @@
 <div class="container">
   <h1 class="display-3">LitTrailers🔥</h1>
-  <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+  <p>Welcome to LitTrailers! Find your favorite movies, and search your favorite actors-- all in one place. Click learn more to get information about all the features this website has to offer! (link doesn't work yet)</p>
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
 </div>
 <br>
@@ -8,8 +8,8 @@
   <div class="card" class="mx-auto" style="float:left; max-width:300px;">
     <img class="card-img-top" src="{{actor.image}}" alt="Card image cap" class="center" style="height:250px;width:auto;padding:10px;">
     <div class="card-body">
-      <h5 class="card-title" style="text-align:center;">{{actor.name}} </h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="card-title" style="text-align:center;">{{actor.name}}</h5>
+      <p class="card-text">{{actor.bio}}</p>
       <a routerLink="/detail/{{actor.id}}" class="btn btn-primary" style="text-align:center;">See More</a>
     </div>
   </div>

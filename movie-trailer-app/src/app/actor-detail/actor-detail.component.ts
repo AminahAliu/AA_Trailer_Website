@@ -12,7 +12,7 @@ import {ALL_ACTORS} from '../actors/real-actors';
 })
 export class ActorDetailComponent implements OnInit {
 
-  actors = ALL_ACTORS;
+  actor: Actor;
 
   constructor(
     private actorService: ActorService,

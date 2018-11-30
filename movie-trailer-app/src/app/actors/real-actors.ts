@@ -13,19 +13,22 @@ export const MRS_WHICH: Actor = {
   name: 'Oprah Winfrey',
   movies: [A_WRINKLE_IN_TIME, THE_COLOR_PURPLE, THE_BUTLER],
   image: 'assets/img/OprahWinfrey.jpg',
+  bio: 'Oprah Winfrey is an American media executive, actress, talk show host, television producer and philanthropist. She is best known for her talk show The Oprah Winfrey Show, which was the highest-rated television program of its kind in history and was nationally syndicated from 1986 to 2011 in Chicago.',
 };
 const PRINCE_TCHALLA: Actor = {
   id: 2,
   name: 'Chadwick Boseman',
   movies: [BLACK_PANTHER, MARSHALL, GET_ON_UP],
-  image: 'assets/img/ChadwickBoseman.jpg'
+  image: 'assets/img/ChadwickBoseman.jpg',
+  bio: 'Chadwick Boseman is an American actor. He is known for his portrayal of T\'Challa / Black Panther in the Marvel Cinematic Universe (since 2016), particularly in Black Panther (2018), and for his starring roles in as Jackie Robinson in 42 (2013), James Brown in Get on Up (2014), and Thurgood Marshall in Marshall (2017).',
 };
 
 const MEG_MURRY: Actor = {
   id: 3,
   name: 'Storm Reid',
   movies: [A_WRINKLE_IN_TIME, SLEIGHT, A_HAPPENING_OF_MONUMENTAL_PROPORTIONS],
-  image: 'assets/img/StormReid.jpg'
+  image: 'assets/img/StormReid.jpg',
+  bio: 'Storm Reid is an American actress. She portrayed the lead role, Meg Murry, in the fantasy film A Wrinkle in Time.',
 };
 
 export const ALL_ACTORS: Actor[] = [

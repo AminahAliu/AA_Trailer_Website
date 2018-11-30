@@ -4,5 +4,6 @@ export class Actor {
   name: string;
   movies: Array<Movie>;
   image: string;
-  id: number; 
+  id: number;
+  bio: string;
 }
