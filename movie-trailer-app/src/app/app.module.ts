@@ -16,7 +16,8 @@ import { MovieHomeComponent } from './movie-home/movie-home.component';
 
 const appRoutes: Routes = [
   { path: '', component: ActorsComponent },
-  { path: 'movie/:movieID', component: MovieComponent }
+  { path: 'movie/:movieID', component: MovieComponent },
+  { path:'movies', component: MovieHomeComponent },
 ];
 
 @NgModule({
