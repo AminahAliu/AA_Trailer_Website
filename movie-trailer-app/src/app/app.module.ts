@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MovieService } from './movie.service';
 import { MovieComponent } from './movie/movie.component';
+import { MovieHomeComponent } from './movie-home/movie-home.component';
 
 
 const appRoutes: Routes = [
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     AppComponent,
     ActorsComponent,
     ActorDetailComponent,
-    MovieComponent
+    MovieComponent,
+    MovieHomeComponent
   ],
   imports: [
     BrowserModule,
