@@ -1,6 +1,9 @@
+<div class="arrangement">
+
 <h2>{{actor.name}}</h2>
 <ul>
   <li *ngFor="let movie of actor.movies">
     <a href="{{movie.trailerURL}}">{{movie.name}}</a>
   </li>
 </ul>
+</div>
