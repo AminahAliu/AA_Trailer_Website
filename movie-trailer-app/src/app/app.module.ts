@@ -30,7 +30,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
