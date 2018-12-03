@@ -14,7 +14,9 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search Movies" aria-label="Search" [(ngModel)]="movie">
+      <input type="text" class="form-control" placeholder="Search Movies"
+                name="movie"
+                [(ngModel)]="movie">
       <button class="btn-block btn-info form-control" (click)="searchMovies()">Search</button>
     </form>
   </div>
