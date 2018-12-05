@@ -4,6 +4,8 @@
   <p><a class="btn btn-primary btn-lg" routerLink="/movies" role="button">Recent Movies »</a></p>
 </div>
 <br>
+<h3> Featured Actors</h3>
+<br>
 <div *ngFor="let actor of actors" style="display:inline;">
   <div class="card" class="mx-auto" style="float:left; max-width:300px;">
     <img class="card-img-top" src="{{actor.image}}" alt="Card image cap" class="center" style="height:250px;width:auto;padding:10px;">

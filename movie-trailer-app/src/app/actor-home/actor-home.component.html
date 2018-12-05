@@ -1,3 +1,24 @@
-<p>
-  actor-home works!
-</p>
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Popular Actors</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div  class="col-sm-4" *ngFor="let popular of popular_people; let i = index">
+    <div *ngIf="i < 9">
+      <div class="card mt-3 mb-3">
+        <div class="card-header text-center">
+          Rating: {{ popular.known_for[0].vote_average }}/10
+        </div>
+        <div class="card-body">
+          <img class="card-img-top img-fluid" src="http://image.tmdb.org/t/p/w500{{ popular.profile_path }}" alt="{{ popular.original_title }}" style="height: 420px">
+          <p class="text-center">{{ popular.name }} </p>
+          <a routerLink="/person/{{ popular.person_id }}" class="btn btn-block btn-info">Actor/Actress Details</a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
