@@ -29,6 +29,12 @@ getUpcomingMovies() {
     return this._http.get(this.movie_url + 'movie/' + id + '?api_key=' + this.api_key);
   }
 
+  getPopularPeople() {
+    return this._http.get(this.movie_url + 'person/popular' + '?api_key=ed6231f16be794a6e311f65e095f0c13' + '&language=en-US&page=1');
+  }
+getPerson(id: number) {
+    return this._http.get(this.movie_url + 'person/' + id + '?api_key=' + this.api_key);
+  }
 }
 
 // Get popular movies api

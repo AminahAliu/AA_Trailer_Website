@@ -12,12 +12,15 @@ import { FormsModule } from '@angular/forms';
 import { MovieService } from './movie.service';
 import { MovieComponent } from './movie/movie.component';
 import { MovieHomeComponent } from './movie-home/movie-home.component';
+import { ActorHomeComponent } from './actor-home/actor-home.component';
+import { ActorApiComponent } from './actor-api/actor-api.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: ActorsComponent },
   { path: 'movie/:movieID', component: MovieComponent },
   { path:'movies', component: MovieHomeComponent },
+  { path:'actors', component: ActorHomeComponent },
 ];
 
 @NgModule({
@@ -26,7 +29,9 @@ const appRoutes: Routes = [
     ActorsComponent,
     ActorDetailComponent,
     MovieComponent,
-    MovieHomeComponent
+    MovieHomeComponent,
+    ActorHomeComponent,
+    ActorApiComponent
   ],
   imports: [
     BrowserModule,
