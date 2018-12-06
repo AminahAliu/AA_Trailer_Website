@@ -1,3 +1,43 @@
-<p>
-  actor-api works!
-</p>
+<div class="container">
+
+  <div *ngIf="person">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card mt-5 mb-5">
+          <div class="card-header">
+            {{ person.name }}
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-5">
+                <img src="https://image.tmdb.org/t/p/w500/{{ person.profile_path }}" class="img-fluid" alt="{{ person.name }}">
+              </div>
+              <div class="col-sm-7">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <strong>Specialty: </strong> {{ person.known_for_department }}
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Birthday: </strong> {{ person.birthday }}
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Biography: </strong> {{ person.biography }}
+                  </li>
+                  <li class="list-group-item">
+                    <a href="{{ person.homepage }}" target="_blank">
+                      Actor Homepage
+                    </a>
+                    <a href="https://www.imdb.com/title/{{ person.imdb_id }}" target="_blank" class="btn btn-sm btn-info float-right">
+                      IMDB Link
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.card -->
+      </div>
+    </div>
+  </div>
+
+</div>
