@@ -12,11 +12,11 @@ export class MovieService {
   constructor(public _http: HttpClient) { }
 
   searchMovie(movie: string) {
-  this.movie_string = movie;
-  return this._http.get(this.movie_url + 'search/movie?query=' + this.movie_string + '&api_key=' + this.api_key);
-}
+    this.movie_string = movie;
+    return this._http.get(this.movie_url + 'search/movie?query=' + this.movie_string + '&api_key=' + this.api_key);
+  }
 
-getUpcomingMovies() {
+  getUpcomingMovies() {
     // tslint:disable-next-line:max-line-length
     return this._http.get(this.movie_url + 'discover/movie?primary_release_date.gte=2018-11-25&primary_release_date.lte=2019-02-28' + '&api_key=' + this.api_key);
   }
@@ -32,7 +32,7 @@ getUpcomingMovies() {
   getPopularPeople() {
     return this._http.get(this.movie_url + 'person/popular' + '?api_key=ed6231f16be794a6e311f65e095f0c13' + '&language=en-US&page=1');
   }
-getPerson(id: number) {
+  getPerson(id: number) {
     return this._http.get(this.movie_url + 'person/' + id + '?api_key=' + this.api_key);
   }
 }

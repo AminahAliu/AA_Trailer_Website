@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Actor } from '../actors/actor';
 import { ActorService } from '../actor.service';
-import {ALL_ACTORS} from '../actors/real-actors';
+import { ALL_ACTORS } from '../actors/real-actors';
 
 @Component({
   selector: 'app-actor-detail',
@@ -16,7 +16,7 @@ export class ActorDetailComponent implements OnInit {
 
   constructor(
     private actorService: ActorService,
-     private route: ActivatedRoute,
+    private route: ActivatedRoute,
   ) { }
 
   ngOnInit() {

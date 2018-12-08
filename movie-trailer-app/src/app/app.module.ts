@@ -19,8 +19,8 @@ import { ActorApiComponent } from './actor-api/actor-api.component';
 const appRoutes: Routes = [
   { path: '', component: ActorsComponent },
   { path: 'movie/:movieID', component: MovieComponent },
-  { path:'movies', component: MovieHomeComponent },
-  { path:'actors', component: ActorHomeComponent },
+  { path: 'movies', component: MovieHomeComponent },
+  { path: 'actors', component: ActorHomeComponent },
 ];
 
 @NgModule({
@@ -39,7 +39,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
-    ],
+  ],
   providers: [MovieService],
   bootstrap: [AppComponent]
 })

@@ -1,21 +1,22 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
 .highlight {
-  background-color:#FFE4E1;
+  background-color: #FFE4E1;
 }
+
 #outline {
   border-color: black;
   border-left: 1px 1px 1px 1px black;
 }
-#container
-  {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
-    background-color: #FFFFFF;
-    box-shadow: 5px #1e1e1e;
 
-  }
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  background-color: #FFFFFF;
+  box-shadow: 5px #1e1e1e;
+}
 
 nav a.active {
-    color: #039be5;
-  }
+  color: #039be5;
+}
