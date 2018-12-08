@@ -49,3 +49,6 @@ getPerson(id: number) {
 
 // Get movie from api
 // https://api.themoviedb.org/3/movie/ID?api_key=API_KEY
+
+// Get actor from api
+// https://api.themoviedb.org/3/person/ID?api_key=API_KEY
