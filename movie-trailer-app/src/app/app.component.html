@@ -1,24 +1,16 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="">🍿</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+  <a class="navbar-brand" routerLink="">🍿</a>
+  <div class="navbar" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/actors">Actors<span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/actors">Actors</a>
       </li>
 
       <li class="nav-item active">
         <a class="nav-link" routerLink="/movies">Movies</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input type="text" class="form-control" placeholder="Search Movies"
-                name="movie"
-                [(ngModel)]="movie">
-      <button class="btn-block btn-info form-control" (click)="searchMovies()">Search</button>
-    </form>
   </div>
 </nav>
 
