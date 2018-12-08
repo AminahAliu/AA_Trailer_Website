@@ -16,7 +16,7 @@ export class ActorApiComponent implements OnInit {
       const id = params['personID'];
       this.movieService.getPerson(id).subscribe(data => {
         this.person = data;
-        // console.log(data);
+       //console.log(data);
       });
     });
   }
